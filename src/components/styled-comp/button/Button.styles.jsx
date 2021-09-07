@@ -4,6 +4,7 @@ export const Button = styled.button`
     border: none;
     margin: 1rem;
     color: white;
+    color: ${(props) => props.textColor};
     padding: 1rem 2rem;
     text-align: center;
     background-color: ${(props) => (props.primary ? "blue" : "purple")};
@@ -11,6 +12,7 @@ export const Button = styled.button`
     box-shadow: 0 1rem 4rem black;
     font-size: 1.5rem;
     transition: all 0.3s;
+    cursor: pointer;
     &:hover {
         background-color: green;
         transform: scale(1.1);
