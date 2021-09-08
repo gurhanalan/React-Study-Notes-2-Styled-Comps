@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./button/Button.styles";
+import ExtendedLink from "./extended-link/ExtendedLink";
 import HeaderText from "./header/HeaderText";
 import Link from "./link/Link";
 import Wrapper from "./wrapper/Wrapper";
@@ -17,9 +18,11 @@ function StyledComponents() {
             >
                 Learn FS Development
             </Link>
-            <Link href="www.google.com" target="_blank" rel="noopener">
+            <Link primary href="www.google.com" target="_blank" rel="noopener">
                 Learn FS Development
             </Link>
+            <ExtendedLink>Extended Link</ExtendedLink>
+            <ExtendedLink secondary>Extended Link</ExtendedLink>
             <Button>Button 1</Button>
             <Button primary textColor={"grey"}>
                 Button Primary

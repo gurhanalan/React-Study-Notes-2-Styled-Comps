@@ -12,6 +12,13 @@ export default styled.a`
             border-radius: 0.3rem;
             padding: 1rem;
         `}
+    ${(props) =>
+        props.primary &&
+        css`
+            background-color: black;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+        `}
 
     &:hover {
         font-size: 1.5rem;
