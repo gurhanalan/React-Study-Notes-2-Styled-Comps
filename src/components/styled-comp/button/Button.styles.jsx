@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Button = styled.button`
     border: none;
     margin: 1rem;
-    color: white;
-    color: ${(props) => props.textColor};
+    /* color: white; */
+    color: ${(props) => (props.textColor ? props.textColor : "white")};
     padding: 1rem 2rem;
     text-align: center;
     background-color: ${(props) => (props.primary ? "blue" : "purple")};
