@@ -9,6 +9,14 @@ function StyledComponents() {
         <Wrapper>
             <HeaderText> Default Text </HeaderText>
             <HeaderText headerColor="red"> Colored Text </HeaderText>
+            <Link
+                secondary
+                href="www.google.com"
+                target="_blank"
+                rel="noopener"
+            >
+                Learn FS Development
+            </Link>
             <Link href="www.google.com" target="_blank" rel="noopener">
                 Learn FS Development
             </Link>

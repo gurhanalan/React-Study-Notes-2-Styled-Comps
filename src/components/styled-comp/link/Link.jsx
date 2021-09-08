@@ -5,6 +5,14 @@ export default styled.a`
     text-decoration: none;
     color: blue;
 
+    ${(props) =>
+        props.secondary &&
+        css`
+            background-color: purple;
+            border-radius: 0.3rem;
+            padding: 1rem;
+        `}
+
     &:hover {
         font-size: 1.5rem;
         opacity: 0.7;
